@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Login" customModule="Leage_of_Follows" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gO5-RB-itj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoz-Gv-4t0">
+                            <rect key="frame" x="62.5" y="65" width="251" height="72"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="62"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25938542154006972" green="0.67172155693305347" blue="0.71590274760104711" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="eoz-Gv-4t0" firstAttribute="centerY" secondItem="gO5-RB-itj" secondAttribute="centerY" id="cxO-Bv-qml"/>
+                        <constraint firstItem="eoz-Gv-4t0" firstAttribute="centerX" secondItem="gO5-RB-itj" secondAttribute="centerX" id="eqB-Ca-7zv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKw-HB-vuA">
+                    <rect key="frame" x="0.0" y="201" width="375" height="201"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The text of this label will definitely change. This will be login information to enter an API key for the user." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-ik-ft1">
+                            <rect key="frame" x="32" y="32" width="311" height="137"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.38872427170000001" blue="0.2807867255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GVe-ik-ft1" secondAttribute="trailing" constant="32" id="Cy3-I0-p8v"/>
+                        <constraint firstItem="GVe-ik-ft1" firstAttribute="top" secondItem="JKw-HB-vuA" secondAttribute="top" constant="32" id="Ddu-7w-wbm"/>
+                        <constraint firstAttribute="bottom" secondItem="GVe-ik-ft1" secondAttribute="bottom" constant="32" id="fc1-df-8GN"/>
+                        <constraint firstItem="GVe-ik-ft1" firstAttribute="leading" secondItem="JKw-HB-vuA" secondAttribute="leading" constant="32" id="xnQ-4m-IVb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkW-op-ZwC">
+                    <rect key="frame" x="0.0" y="402" width="375" height="265"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHR-Rl-hua">
+                            <rect key="frame" x="16" y="16" width="343" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nCX-X8-xQ9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="LLp-aU-OSx"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riot API Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4v-Il-S0R">
+                            <rect key="frame" x="133.5" y="72" width="107.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33861744669292621" green="0.76654532068062831" blue="0.49660472800873251" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mHR-Rl-hua" secondAttribute="trailing" constant="16" id="3TB-fZ-X94"/>
+                        <constraint firstItem="x4v-Il-S0R" firstAttribute="centerX" secondItem="qkW-op-ZwC" secondAttribute="centerX" id="Kgf-yK-abH"/>
+                        <constraint firstItem="mHR-Rl-hua" firstAttribute="leading" secondItem="qkW-op-ZwC" secondAttribute="leading" constant="16" id="Yp2-BH-b08"/>
+                        <constraint firstItem="x4v-Il-S0R" firstAttribute="top" secondItem="mHR-Rl-hua" secondAttribute="bottom" constant="16" id="ZYO-QN-Ccj"/>
+                        <constraint firstItem="mHR-Rl-hua" firstAttribute="top" secondItem="qkW-op-ZwC" secondAttribute="top" constant="16" id="vGg-Md-ZVb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JKw-HB-vuA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" constant="1" id="1UQ-40-DVE"/>
+                <constraint firstItem="gO5-RB-itj" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" constant="1" id="GIw-Uf-oeE"/>
+                <constraint firstItem="JKw-HB-vuA" firstAttribute="top" secondItem="gO5-RB-itj" secondAttribute="bottom" id="Gc0-Bn-oYN"/>
+                <constraint firstItem="gO5-RB-itj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J1H-bM-m1Q"/>
+                <constraint firstAttribute="trailing" secondItem="gO5-RB-itj" secondAttribute="trailing" id="Rcv-Mm-dx1"/>
+                <constraint firstItem="gO5-RB-itj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="To4-Xp-qBT"/>
+                <constraint firstItem="JKw-HB-vuA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VgO-H8-vLU"/>
+                <constraint firstAttribute="trailing" secondItem="qkW-op-ZwC" secondAttribute="trailing" id="bZN-1t-Gaa"/>
+                <constraint firstAttribute="bottom" secondItem="qkW-op-ZwC" secondAttribute="bottom" id="flr-uQ-udd"/>
+                <constraint firstAttribute="trailing" secondItem="JKw-HB-vuA" secondAttribute="trailing" id="v8s-Pd-qby"/>
+                <constraint firstItem="qkW-op-ZwC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yoN-EF-Qds"/>
+                <constraint firstItem="qkW-op-ZwC" firstAttribute="top" secondItem="JKw-HB-vuA" secondAttribute="bottom" id="yrm-mY-58T"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="apiKeyField" destination="mHR-Rl-hua" id="bXo-lf-RKg"/>
+                <outlet property="apiLabel" destination="x4v-Il-S0R" id="SB6-MV-61n"/>
+                <outlet property="descriptionBackground" destination="JKw-HB-vuA" id="YIF-14-vG3"/>
+                <outlet property="descriptionLabel" destination="GVe-ik-ft1" id="UNN-s1-t3n"/>
+                <outlet property="loginBackground" destination="qkW-op-ZwC" id="DLr-HL-xdd"/>
+                <outlet property="titleBackground" destination="gO5-RB-itj" id="8f9-GC-d6S"/>
+                <outlet property="titleLabel" destination="eoz-Gv-4t0" id="3Jj-fF-Ddk"/>
+            </connections>
+            <point key="canvasLocation" x="304.5" y="378.5"/>
+        </view>
+    </objects>
+</document>
